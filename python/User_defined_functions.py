@@ -76,4 +76,12 @@ for i in range(2,n+1):
 # n = int(input("Enter  a number to verify if it is an armstrong number: "))
 # print(f"{n} is an armstrong number" if armstring(n) else f"{n} is not an armstrong number")
 
+# *************** Palindrome ********************
+# def is_palindrome(n):
+#     return str(n) == str(n)[::-1]
+# n = int(input("Enter a number to check if it is a palindrome: "))
+# print(f"{n} is a palindrome" if is_palindrome(n) else f"{n} is not a palindrome")
+# otherwise 2 pointer 
+
+
 
