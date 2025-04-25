@@ -84,3 +84,12 @@ ping -n www.google.com
 -W
     Description: Sets the timeout in seconds for each ping request.
 ping -W 2 www.google.com
+
+
+x] curl  - use to tranfer to/ from a server
+
+curl google.com
+curl -X GET https://example.com 
+curl -s https://example.com - hides progress bars and errors 
+curl -I https://example.com - fetches http header only 
+-l -> to follow redirects if location is changed...
