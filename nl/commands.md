@@ -96,49 +96,8 @@ curl -I https://example.com - fetches http header only
 
 The netstat command is a powerful tool used to display network-related information on a system, and it’s especially useful for troubleshooting and monitoring.
 
-
----
-
-netstat -s Explanation:
-
-netstat -s displays per-protocol statistics, such as TCP, UDP, ICMP, and IP.
-
-It gives you a breakdown like this (example from Linux):
-
-Ip:
-    18952 total packets received
-    0 forwarded
-    2 incoming packets discarded
-    18950 incoming packets delivered
-    ...
-Tcp:
-    102 connections established
-    2101 segments received
-    2000 segments sent out
-    ...
-Udp:
-    524 packets received
-    3 packet receive errors
-    ...
-
-Use Cases:
-
-Diagnosing dropped packets
-
-Checking retransmissions or errors in TCP
-
-Monitoring packet flow stats
-
-
-
----
-
-Other Common netstat Commands:
-
-
----
-
-Let me know if you want examples or how this compares with ss, which is more modern.
+netstat -a all active connections
+-u UDP , -t tcp ,-l listening sockets
 
 
 
