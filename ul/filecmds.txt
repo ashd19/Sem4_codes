@@ -1,0 +1,65 @@
+ls -l: Shows detailed information (permissions, owner,
+size, and modification time).
+ls -a: Lists all files, including hidden files (those starting
+with .).
+ls -lh: Displays file sizes in a human-readable format
+(e.g., KB, MB) 
+
+cat > filename -> overwrite
+cat >> filename -> append 
+
+rmdir x - remove directory 
+rm -r: Recursively deletes directories and their contents.
+rm -f: Forces the removal without asking for
+confirmation.
+rm -i: Asks for confirmation before deleting each file. 
+
+cp -r: Recursively copies directories and their contents.
+cp -i: Prompts for confirmation before overwriting files.
+cp -u: Copies only files that are newer or do not exist in
+the destination 
+cp file1 file2 
+
+
+mv - moves files / directories and renames 
+ mv test1.txt ching.txt
+ ls
+ashton  ching.txt  test2.txt
+
+chmod 777: Grants all permissions (read, write, execute)
+to everyone.
+● chmod +x: Adds execute permission to the file for all
+users.
+● chmod -R: Recursively changes permissions for files in
+directories. 
+
+
+
+sort -n: Sorts lines numerically.
+sort -r: Sorts lines in reverse order.
+sort -u: Removes duplicate lines from the output 
+
+head -n [number]: Shows the first N lines of a file.
+head -c [number]: Displays the first N bytes of a file.
+head -q: Suppresses the output of file names when
+multiple files are specified. 
+
+tail -n [number]: Displays the last N lines of a file.
+tail -f: Follows the end of a file, showing new lines as
+they are added.
+tail -q: Suppresses the output of file names when
+multiple files are specified. 
+
+head first tail from end 
+diff -u: Displays output in a unified format (more
+human-readable).
+diff -q: Reports only whether files differ, not the
+differences.
+diff -r: Recursively compares directories. 
+
+comm -1: Suppresses lines unique to the first file.
+comm -2: Suppresses lines unique to the second file.
+comm -3: Suppresses lines that are common to both files. 
+line by line 
+
+find filename

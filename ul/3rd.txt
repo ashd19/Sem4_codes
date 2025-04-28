@@ -1,0 +1,8 @@
+passwd - changes password 
+sudo useradd -m newuser
+passwd -l newuser  locks new user 
+usermod
+Modifies an existing user account.
+usermod -l old new , changes user name 
+userdel usname
+su usname 
