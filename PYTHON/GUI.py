@@ -27,6 +27,7 @@ def submit():
         hobbies.append("Sports")
     if hobby_music.get():
         hobbies.append("Music")
+    
 
     
     output_text.delete(1.0, tk.END)
