@@ -1,0 +1,9 @@
+
+ID	First Name	MiddleName	LastName	Account No.	Account type	Balance	Occupation
+1	Anish		Shah		Rao		12345		Current		100000	Engineer
+2	Harsh		Akash		Shah		54321		Current		51000	Doctor
+3	Nadeem		Jerry		Shah		23541		Savings		32690	Teacher
+4	Rustom		Raj		Singh		67434		Fixed		19000	Doctor
+5	Kumar		Pratap		Rathod		62222		Savings		148790	Baker
+
+
