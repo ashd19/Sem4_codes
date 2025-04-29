@@ -65,3 +65,27 @@ class Cat(Animal):
 
 
 
+class CustomList(list):
+    def __iadd__(self, other):
+        self.append(other)
+        return self
+
+# Take initial input list
+raw_input = input("Enter initial elements separated by space: ")
+l1 = CustomList(raw_input.split())  # All elements are strings initially
+
+# Take another value to add using +=
+new_element = input("Enter a value to add using += : ")
+l1 += new_element  # Calls __iadd__
+
+print("Updated list:", l1)
+
+
+
+class Calculator:
+    def add(self, *args):
+        return sum(args) 
+    
+
+
+    

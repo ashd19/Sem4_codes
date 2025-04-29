@@ -42,4 +42,11 @@ def prime_number(num):
                 return False
         return True
     else:
-        return False
+        return False 
+    
+
+for i in range(1,100):
+    if prime_number(i):
+        print(f"{i} ")
+    else:
+        continue
