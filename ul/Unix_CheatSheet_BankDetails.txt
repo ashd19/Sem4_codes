@@ -1,0 +1,68 @@
+
+==========================
+  Unix Text Processing: GREP, AWK, SED Cheat Sheet
+  Using Example: BankDetails.txt
+==========================
+
+🔹 GREP Commands
+
+1. Find all lines with occupation "Doctor":
+   grep "Doctor" BankDetails.txt
+
+2. Find all records with account type "Savings":
+   grep "Savings" BankDetails.txt
+
+3. Find all records where last name is "Shah":
+   grep "Shah" BankDetails.txt
+
+4. Find all records that contain the digit '2':
+   grep "2" BankDetails.txt
+
+5. Find all lines starting with '5' (ID = 5):
+   grep "^5" BankDetails.txt
+
+
+🔸 AWK Commands
+
+1. Print full names of all users (First Middle Last):
+   awk 'NR > 1 {print $2, $3, $4}' BankDetails.txt
+
+2. Print full name and balance of users with balance > 50000 (include header):
+   awk 'NR == 1 || $7 > 50000 {print $2, $3, $4, $7}' BankDetails.txt
+
+3. Print account number and account type:
+   awk 'NR > 1 {print $5, $6}' BankDetails.txt
+
+4. Print ID and occupation where account type is "Savings":
+   awk 'NR == 1 || $6 == "Savings" {print $1, $8}' BankDetails.txt
+
+5. Print names and balances where balance < 30000:
+   awk '$7 < 30000 {print $2, $3, $4, $7}' BankDetails.txt
+
+6. Print only header:
+   awk 'NR == 1' BankDetails.txt
+
+7. Print all lines except header:
+   awk 'NR > 1' BankDetails.txt
+
+
+🔻 SED Commands
+
+1. Replace the word "Doctor" with "Physician":
+   sed 's/Doctor/Physician/g' BankDetails.txt
+
+2. Delete the line containing "Rustom":
+   sed '/Rustom/d' BankDetails.txt
+
+3. Replace multiple spaces with a tab character:
+   sed 's/ \+/\t/g' BankDetails.txt
+
+4. Change account type "Current" to "Checking":
+   sed 's/Current/Checking/g' BankDetails.txt
+
+5. Add [Verified] at the end of every line:
+   sed 's/$/ [Verified]/' BankDetails.txt
+
+==========================
+End of Cheat Sheet
+==========================
