@@ -87,5 +87,21 @@ class Calculator:
         return sum(args) 
     
 
+class Dog:
+    def speak(self):
+        print("Woof!")
 
-    
+class Cat:
+    def speak(self):
+        print("Meow!")
+
+def make_sound(animal):
+    animal.speak()
+
+d = Dog()
+c = Cat()
+
+make_sound(d)  # Woof!
+make_sound(c)  # Meow! 
+
+
